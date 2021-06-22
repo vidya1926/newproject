@@ -1,0 +1,38 @@
+package JavaCodes;
+public class learnvariables {
+    private static int i = 10;
+    public int j = 8;
+// Global Variable ( Not a tech term in Java)
+// Instance variable ( Tech term)
+// accessSpecifier  retrunType MethodName arguments()
+    public static int variables() {
+        int f = 78, g = 10;
+        int h = f + g;
+        // learnvariables obj = new learnvariables();
+        // obj.variables();
+        return h;
+    }
+    public boolean variables1() {
+    boolean flag = false;
+        return flag;
+    }
+    public void demo1() {
+        learnvariables obj = new learnvariables();
+        // int variables = obj.variables();
+        int variables = variables();
+        int result = variables + 20;
+        System.out.println("result;" + result);
+        boolean varBool = obj.variables1();
+        System.out.println("varBool:" + varBool);
+    }
+    public void demoNoReturn() {
+        int f = 6 + 8;
+        System.out.println(f);
+    }
+    public static void main(String[] args) {
+        learnvariables obj = new learnvariables();
+        obj.variables();
+        obj.j = 0;
+        obj.demo1();
+        obj.demoNoReturn();
+        int i = 7;
